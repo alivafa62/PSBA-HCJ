@@ -1,12 +1,9 @@
-# HTML-CSS-JAVASCRIPT-SBA
-This is an assignment to create a set of webpages during my Per Scholas Course 
-
 # Description:
 
-The set of websites goes over briefly on three components used to create websites HTML,CSS, and JAVASCRIPT.
-Each page goes in a brief overview on the topics along with some example and explanation
-on how I was able to create the example along with some links to external sources for beginers
-to learn more about the three componets used to create websites.
+This is a project that introduces some features of 3 languages (HTML, CSS, and Javascript).
+In the HTML page, we are introduced to the basics of html and sme tags names and their usage.
+On the second page, which is CSS, we will learn some interesting things about how we can give style to our pages and make them attractive to users.
+On the last page, we describe some functions and methods that we can use to make our pages more active and have more functionality for our users.
  
 
 # Specifications:
