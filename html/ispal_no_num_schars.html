@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel = "stylesheet" href="../css/page2.css">
+        <script src="../script/myscript.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body onload = "isapalnoschars()">
+        <div class = "header_nav_bar">
+
+            <a class="active" href="../html/html_page_1.html">HTML</a>
+            <a href="../html/CSS_page_2.html">CSS</a>
+            <a href="../html/JavaScript.html">JavaScript</a>
+
+        </div>
+
+        <div class = "container">
+            <div class = "row">
+                <div class="col-sm-12" id = "main_body_div">
+                    <div id ="functionbody"></div>
+                    <p id = "ispalpara">
+                        To Achieve the affect of determining if a word contains a number such as (ex:1,2,3,4,5, et...) or speical characters
+                        such as "^&*&^%#", we use regex or "regualr expressions". By using Regex we can check for a patern of characters in a given string/word.
+                    </p>
+                    <img id = "ispalimg" src="../imgs/regex.PNG" style ="width: 60%; height: 40%;">
+                    <p id = "ispalpara2">
+                        As shown in the above code we have two different regualr expressions variables with different expression values. The way regex works
+                        is that it match character combinations in strings to the charcters defined in the regex object. Our Regex object "format" was set with 
+                        all special characters except for ' character. The second regex object is set to \d/ which means all digit/number characters. Using an If
+                        statement we can check if the string has either a number, special charcter that isnt a ' or both. the || symbol between 
+                        "if(hasNumber.test(checker2[0]) || !letters.test(checker2[0]))" is an "or" statement which means if one of these conditons is true,
+                        the word has a number, a special character or both, the word is in valid.
+                    </p>
+                    <p id = "ispalpara3" >
+                        If the word dosen't contain sepcial characters or any numbers the else statment code runs. Is the code we define a var called "str"
+                        and set it equal to the lowercase version of the value of the "word" variable. Then we split into indiviual charcter in an array <em>basically a list of the characters that made up the word</em>
+                        <em>(Ex: "cat" => ["c","a","t"]) </em> the we reverse the list <em>(Ex: "cat" => ["c","a","t"] => ["t","a","c"]) </em>, finally wwe rejoin the word and compare it to the 
+                        orignal lowercase string.
+                     </p>
+               
+                    <img src="../imgs/null2.PNG"style ="width: 80%; height: 80%;">
+                    <p>
+                        This uses a simple if statement as to the happy-birthday function to detect if the user didn't enter a word into the text field.
+                        <a href="../html/Happyb-day.html">click here to see how that example</a>
+                    </p>
+                    <br>
+                    <a href="../html/JavaScript.html" class="back"> &#60; Back</a>
+                </div>
+               
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

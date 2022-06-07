@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <script src="../script/myscript.js"></script>
+    </head>
+    <body>
+        <div class = "header_nav_bar">
+
+            <a class="active" href="../html/html_page_1.html">HTML</a>
+            <a href="../html/CSS_page_2.html">CSS</a>
+            <a href="../html/JavaScript.html">JavaScript</a>
+
+        </div>
+
+        <div class = "container">
+            <div class = "row">
+                <div class="col-sm-12" id = "main_body_div">
+                    <div id ="divbody">
+                        <p>
+                            This is how a page would look like with out any CSS. The site will appear as a boring balnd
+                            white box with text, images and such. The site looks uninspired, unprofessional and something 
+                            that looks like a time capsual from the early days of the internet.
+                        </p> 
+                        <p>
+                            lets fix that with a live demo to compare the diference between with and with out CSS. For this demo I will use something we have 
+                            yet to talk about, JavaScript. I will get into Javasript more in it's own dedicated section, for now we'll create a simple Js function
+                            to turn "off" and "on" CSS on this page.
+                        </p>
+                        <p>
+                            Our first function will add CSS to this page. This can be done in a couple of ways. 
+                            One way, the long way would be to write a function to individually add CSS styling to
+                            each element tag one at a time. This would get messy and not someything I would suggest on
+                            doing for an entire page. Another way and what I will do for this example is to creat a 
+                            link element tag referencing an external CSS sheet.
+                        </p>
+                        <br>
+                        <img src="../imgs/load sheet function.PNG" style="width: 80%; height: 60%;">
+                        <br>
+                        <button onclick="loadsheet()">load a css sheet</button>
+                        <br>
+                        <p>
+                            our second function will "remove"/"delete" the link elements from the page returning the 
+                            page back to how we saw it when we first loaded the page.
+                        </p>
+                        <p>
+                            our code would look something like this
+                        </p>
+                        <br>
+                        <img src="../imgs/delete sheet function.PNG"style="width: 80%; height: 60%;">
+                        <br>
+                        <button onclick="deletesheets()">Remove Css</button>
+                        <p>
+                            As you can see simply adging some color properties and formating the text goes 
+                            along way in creating effective web page desgins.
+                        </p>
+                            <br>
+                        <a href="../html/CSS_page_2.html" class="next"> &#60; Back</a>
+                    </div>           
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </body>
+    <footer>
+        &#169;Ali Vafa 2022
+    </footer>
+</html>

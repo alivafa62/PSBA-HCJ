@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel = "stylesheet" href="../css/page1.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	    <style type="text/css">
+            body {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 14pt;
+            }
+	    </style>
+    </head>
+    <body>
+        <div class = "header_nav_bar">
+
+            <a class="active" href="../html/html_page_1.html">HTML</a>
+            <a href="../html/CSS_page_2.html">CSS</a>
+            <a href="../html/JavaScript.html">JavaScript</a>
+
+        </div>
+
+        <div class = "container">
+            <div class = "row">
+                <div class="col-sm-12" id = "main_body_div">
+                    <p>
+                        Welecome, this site will go over the basics of html,Css and JavaScript and some of their uses in creating
+                        dynamic web pages!
+                    </p>
+                    <h2>
+                        what is html and what is an html file?
+                    </h2>
+                    <p>
+                        Html stands for Hyper Text Markup Langauge. Html is a mark-up langauge and not a programing langauge.
+                        What dose it mean to be a "Markup Langauge", which is just a fancy way of saying a text file with some
+                        identifier tags. Yes, the webpages you see on the internet are really just a type of text file.
+                    </p>
+
+                    <h2>How does Html work?</h2>
+
+                    <p>
+                        We already went over the fact that html/webpages are nothing more than just text file.So, how
+                        can see objects like images, special fonts and video links on a webpage. This is where those special
+                        tags I had mention before, along with CSS and JavaScript which we will get to later. Your web browser
+                        whether it's Chrome, Edge or Firefox all of them "read" the html file. Those special tags will "tell"
+                        your web browser how to diaplay the element to the user.
+                        
+                        <br>
+
+                        For example using the " &#60;iframe&#62;" or the " &#60;video&#62;" tag tells the page to display a video from either a local
+                        source or an external source. in this example we will use Iframes to link a Youtube video.
+                        <br>
+                        <br>
+                        This is how the code would look like:
+                        <br>
+                        
+                            <img src="../imgs/iframe'.PNG" style="margin: auto; text-align: center;">
+
+                        <br>
+                        <strong>Result:</strong>
+
+                        
+                    </p>
+                    <iframe 
+                        width="560" height="315" src="https://www.youtube.com/embed/CKlh1lwe2rY" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <br>
+                    <br>
+                    <p>
+                        There are many Html tags for many different purposes. As shown in the example above some are used for video
+                        play back, some to format text, other to display images, etc. This is just a small list of tags and what they do
+                    </p>
+                    <br>
+                    <table style="width:100%; position: relative;text-align: center;">
+                        <tr>
+                          <th>Html Tag</th>
+                          <th>What it dose</th> 
+                          <th>example</th>
+                   
+                        </tr>
+                        <tr>
+                          <td>&#60;p&#62;</td>
+                          <td>the P tag is use to fromat text into paragrahs</td>
+                            <td><p>This is a paragraph using</p></td>
+                        </tr>
+                        <tr>
+                          <td>&#60;b&#62;</td>
+                          <td>the b tag is used to maker characters Bold</td>
+                          <td><b>This is a BOLD</b></td>
+                        </tr>
+                        <tr>
+                          <td>&#60;br&#62;</td>
+                          <td>adds a new line between page elements.</td>
+                          <td>this text<br>is sperated by a break line</td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input&#62;</td>
+                            <td>used to differnt type of get user input</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;select&#62;</td>
+                            <td>used to create a drop down list</td>
+                            <td>
+                                <label for="food">select your meal:</label>
+                                <select name="foods" id="foods">
+                                  <option value="volvo">Chicken wings</option>
+                                  <option value="saab">A Kid's happy meal</option>
+                                  <option value="opel">Salad</option>
+                                  <option value="audi">Pizza</option>
+                                </select>
+                            </td>
+                        </tr>
+                                        
+                      </table>
+
+                      
+
+                    
+
+                    <h3>End of the section</h3>
+                    <p>
+                       Again there are many more tags than the few I listed here. A good source to find out about html tags
+                       is <a href="https://www.w3schools.com/TAGs/">W3schools</a>, there they provides live demo examples of each tag.
+                    </p>
+                    <p>
+                        while web pages body is made up of html tags, there only so much you can do with it alone. If you want to add
+                        "style" to your page like make the page color blue or have your text appear perfectly alined in the center, you'll
+                        need to use CSS which will be the next topic we will discuss in the following page.
+                    </p>
+                    <br>
+                    <a href="../html/CSS_page_2.html" class="next">Next CSS &raquo;</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </body>
+    <footer>
+        &#169;Ali Vafa 2022
+    </footer>
+</html>
+

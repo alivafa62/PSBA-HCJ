@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel = "stylesheet" href="../css/page2.css">
+        <script src="../script/myscript.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	    <style type="text/css">
+            body {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 14pt;
+            }
+	    </style>
+    </head>
+    <body>
+        <div class = "header_nav_bar">
+
+            <a class="active" href="../html/html_page_1.html">HTML</a>
+            <a href="../html/CSS_page_2.html">CSS</a>
+            <a href="../html/JavaScript.html">JavaScript</a>
+
+        </div>
+
+        <div class = "container">
+            <div class = "row">
+                <div class="col-sm-12" id = "main_body_div">
+                    <div id ="s.message">
+                        <button onclick="bday()">click to see a Message</button>
+                    </div>
+                    <p id = "para" style >
+                        While this is a very simple script used to create a happy birthday message, this is a good basic example of using form tag along
+                        with JavaScript to send information from one page to another. You notice in th url bar after the question "?" wher name=""&age="", when using form 
+                        tags we can send data in two ways using method "GET" or method "POST". Using method 'GET' will display the variable name along with it value in the 
+                        url bar. They are several ways of extracting this information, but for this case we'll use some simple java scripting.
+                    </p>
+                    <img id = "img" src="../imgs/bday.PNG" >
+                    <p id = "para2" >
+                        The first part div = document.getElementById will get the element associated with an id that matches the argument entered, this is where
+                        we will display the message at the end of the function. "var str  = window.location.search;" will create a string equal to the url starting from the "?" to the 
+                        value of age, so it would look some thin linke this "var str = '?name=jon&age=20';". Now with that we use it in the as a agrument/perameter in 
+                        in URLSearchParams(); this will make getting the values from the url lot easier. Using urlParams.get('name') will get the value "jon" and use it in the next part of out function.
+                        The next part involves a Switch-Case, this is used when we want to check a value and depending on the value we want certain sections of code to run. This can be done with
+                        if and else if statments aswell which is a topic I will get into later. With that in mind depending on the the last digit of the number string, the ending case will be different.
+                        at the end we concat/add the messages together and append them into the div using div.appendChild().
+                    </p>
+                    <br>
+                    <img src="../imgs/null1.PNG"style ="width: 80%; height: 80%;">
+                    <p>
+                        If no input is detected the message a "missing detected" message will be displayed on screen rather than the happy birthday message.
+                        A if statments work the same way as in the real world, If x event happens then do this. The if statement is checking if the null is equal to null
+                        meaning the user didnot enter anything into the text feild or if an empty string was entered. If, so then the message will be dsiplayed.
+                    </p>
+                    <br>
+                    <a href="../html/JavaScript.html" class="back"> &#60; Back</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

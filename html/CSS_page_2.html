@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel = "stylesheet" href="../css/page2.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	    <style type="text/css">
+            body {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 14pt;
+            }
+	    </style>
+    </head>
+    <body>
+        <div class = "header_nav_bar">
+
+            <a href="../html/html_page_1.html">HTML</a>
+            <a class="active" href="../html/CSS_page_2.html">CSS</a>
+            <a href="../html/JavaScript.html">JavaScript</a>
+
+        </div>
+
+        <div class = "container">
+            <div class = "row">
+                <div class="col-sm-12" id = "main_body_div">
+                    <p>
+                        Now that we have gone Over what html is, how it works and show a few examples of how it works. Now It time 
+                        to discuss the next important part of all webpages CSS. 
+                    </p>
+                    <h2>
+                        what is CSS?
+                    </h2>
+                    <p>
+                        CSS stand for Cascading Style Sheets. Just like Html is also an text file that contain a set of selectors and adtributes
+                        to add "styling" to any page as the developer sees fit. 
+                    </p>
+
+                    <h2>How does CSS work?</h2>
+
+                    <p>
+                      CSS uses "selectors" to identifiy a element in a page. You can select and element by its tagname, its id name and class name.
+                      examples:
+                      <br>
+                    <table style="width:100%; position: relative;text-align: center;">
+                      <tr>
+                        <th>html element</th>
+                        <th>selector + some adtribues</th> 
+                        
+                      </tr>
+                      <tr>
+                        <td>&#60;p&#62;</td>
+                        <td>
+                            p{
+                                color:red;
+                                text-alaign:center;
+                            }
+                        </td>
+                
+                      </tr>
+                      <tr>
+                        <td>&#60;p class = "para1"&#62;</td>
+                        <td>
+                            .para1{
+                                color:red;
+                                text-alaign:center;
+                            }
+                        </td>
+                 
+                      </tr>
+                      <tr>
+                        <td>&#60;p id = "line1"&#62;</td>
+                        <td>
+                            #line1{
+                                color:red;
+                                text-alaign:center;
+                            }
+                        </td>
+                        
+                      </tr>  
+                                      
+                    </table>
+                    <br>
+                    It's ok that you don't understand what the atributes are doing at the moment, we will get to that soon, this example is to
+                    show how to use CSS selectors to "tell" the browser what element(s) to add these atributes to them.     
+                    </p>
+                    <p>
+                        The attributes are what tell the web browser of choice what is the color of the page, the font of the text
+                        if the background is set to be a static image, the size or location of a element on screen etc.
+                        <br>
+                        All webpages these days have heavy use of CSS because of the customizability it gives the developer to create their own unquie looking
+                        site. This page you are viewing is using some CSS to keep the page from looking balnd and uninspired.
+
+                        here is a link to a demo page that lacks <a href="../html/lack_css.html">CSS</a>
+                        
+                    </p>
+                    <br>
+                       
+                    <h3>Css Animation</h3>
+
+                    <p>
+                        Css can also be used to create animated elements on your web pages. some of these can be as simple as 
+                        chaning the color of a box on screen
+                        <div id ="colorbox">
+
+                        </div>
+                        <br>
+                        Even though this may seem simple it a good entry point into explaing how css animation works.
+                        <img src="../imgs/keyframe.PNG">
+                        <br>
+                        The image above is the CSS to create the color changing box in the example above. In the colorbox "call" we made 
+                        we set the height and width of the element to 100px (100 pixels) and fill it with the background-color with red. Now we added
+                        a new CSS attribute:value pair wen havent seen yet Animation-name, animation-duration and interation-count. Animation-name is self explainorty
+                        it tells the browser the name of the animation tied to the element. Animation duration is how long it will take for the animation to complete, setting in to 2 seconds
+                        will increase the speed and setting it to 10s will decreased the speed of the animation. Animation-interation-count is how many time you want the animation to
+                        repeat it self, in this example we set it to "infinte" which mean the naimation will continously repeat it self.
+                    </p>
+                    <p>
+                        What you may have notice is the @Keyframes section of the CSS, this is where the animation is defined. First we have to name the animation after we declare @keyframes.
+                        We set the name of this demo to "example" same as the animation in the colorbox css property. Inside the brackets we said from background-color red to background-color yellow
+                        tells browser to transition the color from red into yellow. This is one way to create animates html elements, another way is by using percentages instead of the "from-to" in the example
+                        above. 
+                        <br>
+                        
+                        For this <a href="../html/moving box.html">example</a> we'll not only change the color but also move the box around at the same time.
+                    </p>
+
+
+                    <h3>End of the section</h3>
+
+                    <p>
+                       With CSS added to your webpages you can create eye ctaching sites, that will certianly attract your user
+                       attenion. While a site made with Html and CSS can certainly look good, but if you want to provide a service
+                       to your user you will need something to do the background task. This is where JavaScript comes in. 
+                       There more to CSS than what I Shown here if you want to learn more here's a link to a good starting point <a href="https://www.w3schools.com/css/default.asp"> CSS</a>
+                    </p>
+                    <br>
+                    <a href="../html/html_page_1.html" class="back"> &#60; Back</a><a href="../html/JavaScript.html" class="next">Next JS &raquo;</a>
+                    <br>
+
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </body>
+    <footer>
+        &#169;Ali Vafa 2022
+    </footer>
+</html>
+
+<style>
+    th, td {
+    border: 1px solid rgb(27, 70, 151);
+  }
+
+  #colorbox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+</style>
